@@ -35,38 +35,3 @@ $(".step05").click( function() {
 	$("#line-progress").css("width", "100%");
 	$(".2023").addClass("active").siblings().removeClass("active");
 });
-
-filterObjects("all");
-
-function filterInformation(info) {
-    var boxes, i;
-    let boxes = document.getElementsByClassName("box");
-    if (info == "all") info = "";
-    for (i = 0; i < boxes.length; i++) {
-        removeClass(boxes[i], "show");
-        if(boxes[i].className.indexOf(info) > -1) addClass(boxes[i], "show")
-    }
-}
-
-function addClass(element, name) {
-    var i, arr1, arr2;
-    let arr1 = element.className.split(" ");
-    let arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-        }
-    }
-}
-
-function removeClass(element, name) {
-    var i, arr1, arr2;
-    let arr1 = element.className.split(" ");
-    let arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-        }
-    }
-    element.className = arr1.join(" ");
-}
