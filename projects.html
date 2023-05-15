@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Finn M-L</a>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar">Menu</label>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="none">Contact</a>
+                <ul>
+                    <li><a href='#'>Email</a></li>
+                    <li><a href='#'>LinkedIn</a></li>
+                    <li><a href='#'>Facebook</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<h1 class="heading">My Projects</h1>
+<div class="container-information">
+    
+    <div id="control-buttons">
+        <button class="btn" onclick="filterObjects('all')">Show All</button>
+        <button class="btn" onclick="filterObjects('python')">Python</button>
+        <button class="btn" onclick="filterObjects('javascript')">Javascript</button>
+        <button class="btn" onclick="filterObjects('c')">C</button>
+        <button class="btn" onclick="filterObjects('java')">Java</button>
+    </div>
+
+    <div class="project-contents">
+        <div class="box python">Learning Object</div>
+        <div class="box python">Event Booking Website</div>
+        <div class="box python">Slay the Spire Remake</div>
+        <div class="box python">Star Dew Valley Remake</div>
+        <div class="box javascript">Snake</div>
+        <div class="box javascript">Pong</div>
+        <div class="box c">Menulog Remake</div>
+        <div class="box c">Chess Remake</div>
+        <div class="box java">Weather Prediction App</div>
+        <div class="box java">Cargo Storage Manager</div>
+        <div class="box java">Stock Manager System</div>
+    </div>
+
+</div>
+
+</body>
